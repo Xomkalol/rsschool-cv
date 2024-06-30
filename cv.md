@@ -60,3 +60,7 @@ input.addEventListener("keyword",(e) => {
 This is example of code i wrote for freeCodeCamp task.
 
 ====
+
+## Languages:
+    * Russian (native)
+    * English

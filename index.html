@@ -1,12 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Page Title</title>
+<title>Anatoly Shakov RSschool CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="style.css">
 </head>
-<body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<body>
+    <header class="header">
+        <h1 class="header__title">Anatoly Shakov CV for a RS school</h1>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav_list-link" href="#bio">Bio</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav_list-link" href="#about">About</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav_list-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav_list-link" href="#code">Code example</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav_list-link" href="#experience">experience</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav_list-link" href="#education">Education</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav_list-link" href="#contacts">Contacts</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <div class="bio-section" id="bio">
+            <img src="images/avatar.jpg" alt="my avatar photo" loading="lazy" class="bio-section__photo">
+            <p class="bio-section__name">Shakov Anatoly Sergeevich</p>
+        </div>
+
+        <section class="about-section" id="about">
+            <h2 class="about-section__title">About me:</h2>
+            <p class="about__text">
+                I am started coding in a 2020. The first thing i started to learn was a frontend developing so I started with HTML and CSS.It was more a hobby for me and i didnt invest much time in it.
+And after i joined telegram chat with a great community it inspired me to take a more serious approach to coding and even consider a developer carrier.
+            </p>
+
+        </section>
+
+        <section class="skillset-section" id="skills">
+            <h2 class="skillset-section__title">Skills:</h2>
+
+            <ul class="skillset-section__list">
+                <li class="skillset-section__item">Communication Skills</li>
+                <li class="skillset-section__item">Analytical Abilities</li>
+                <li class="skillset-section__item">Project Management:</li>
+            </ul>
+        </section>
+
+        <section class="code-section" id="code">
+            <h2 class="code-section__title">There is my code example:</h2>
+
+            <p class="code-section__describe">
+                code presented in example are from freeCodeCamp task
+            </p>
+            <pre><code class="code-section__code">
+                const checkUserInput = () => {
+                    const inputInt = parseInt(input.value);
+                    if (isNaN(inputInt) || inputInt == false) {
+                      resultContainer.style.display = "block";
+                      result.innerText = "Please enter a valid number"
+                      return
+                    } else if (inputInt >= 4000) {
+                      resultContainer.style.display = "block";
+                      result.innerText = "Please enter a number less than or equal to 3999"
+                      return
+                    } else if (inputInt &lt; 0 ) {
+                      resultContainer.style.display = "block";
+                      result.innerText = "Please enter a number greater than or equal to 1"
+                      return
+                    }
+                      resultContainer.style.display = "block";
+                      result.innerText = romanConverter(inputInt);
+                      return
+                  }
+                  
+                  
+                  const romanConverter = (input) => {
+                    const result = [];
+                    let num = input
+                  
+                    romanNumerical.forEach((item) => {
+                      while (num >= item[0]) {
+                        result.push(item[1])
+                        num -= item[0]
+                      }
+                    })
+                    return result.join('')
+                  }
+                  
+                  
+                  convertBtn.addEventListener("click",checkUserInput)
+                  
+                  input.addEventListener("keyword",(e) => {
+                    if (e.key === "Enter") {
+                      checkUserInput()
+                    }
+                  })
+            </code></pre>
+
+        </section>
+
+        <section class="experience-section" id="experience">
+            <h2 class="experience-section__title">Sadly i got no experience in developing.</h2>
+
+            <p class="experience-section__text">
+                Coming soon!
+            </p>
+        </section>
+
+        <section class="education-section" id="education">
+            <h2 class="education-section__title">Education</h2>
+
+            <div class="education-section__wrapper">
+                <p class="education-section__year">2023-2024</p>
+
+                <p class="education-section__name">Freecode camp courses</p>
+            </div>
+
+            <div class="education-section__wrapper">
+                <p class="education-section__year">2024</p>
+
+                <p class="education-section__name">JS/FE Pre-School 2024Q2</p>
+            </div>
+
+        </section>
+
+        <section class="language__section" >
+
+            <h2 class="language__title">Languages:</h2>
+
+            <ul class="language__list">
+                <li class="language__item">English - B?</li>
+                <li class="language__item">Russian ( native ) </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="contacts-section" id="contacts">
+            <ul class="contacts-section__list">
+                <li class="contacts-section__item">
+                    <a class="contacts-section__link" href="https://t.me/ShakovAS">telegram: @ShakovAS </a>
+                </li>
+                <li class="contacts-section__item">
+                    <a class="contacts-section__link" href="mailto:shakovxomka@gmail.com">email: shakovxomka@gmail.com </a>
+                </li>
+                <li class="contacts-section__item">
+                    <p class="contacts-section__text">Discord: Kihanlol</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__section">
+
+            <div class="footer__section-wrapper">
+                <a class="footer__section-link" href="https://github.com/Xomkalol"><img src="images/github.png" alt="github icon" class="footer__github-img">My github</a>
+            </div>
+
+            <div class="footer__section-wrapper">
+                <p class="footer__section__years">2023-2024</p>
+            </div>
+
+            <div class="footer__section-wrapper">
+                <a class="footer__section-link" href="https://rs.school/courses/javascript-ru"><img src="images/rsschool.png" alt="RSschool icon" class="footer__rss-icon">RS School</a>
+            </div>
+
+
+        </div>
+
+    </footer>
 
 </body>
 </html>

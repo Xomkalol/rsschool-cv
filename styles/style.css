@@ -1,0 +1,227 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* reseting box-sizing margin and padding default */
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.header__title {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list-item {
+    list-style: none;
+    width: 150px;
+    height: 50px;
+}
+.nav_list-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.nav_list-link::after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: black;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.nav_list-link:hover::after,
+.nav_list-link:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
+}
+
+
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+.bio-section__photo {
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+}
+.bio-section__name {
+    font-size: 50px;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+
+.about-section__title{
+    align-self:flex-start;
+    margin-bottom: 30px;
+}
+.about__text {
+    font-size: 20px;
+}
+.skillset-section {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+.skillset-section__title {
+    margin-bottom: 30px;
+}
+.skillset-section__list {
+    align-self:flex-start;
+}
+.skillset-section__item {
+    list-style: none;
+    font-size: 20px;
+}
+.code-section {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+.code-section__title {
+    margin-bottom: 30px;
+}
+.code-section__describe {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+pre {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.experience-section {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+.experience-section__title {
+    margin-bottom: 30px;
+}
+.experience-section__text {
+    font-size: 20px;
+}
+.education-section {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+.education-section__title {
+    margin-bottom: 30px;
+}
+.education-section__wrapper {
+    font-size: 20px;
+}
+
+.education-section__name {
+    margin-bottom: 20px;
+}
+.language__section {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+.language__title {
+    margin-bottom: 30px;
+}
+
+.language__item {
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+.contacts-section {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.contacts-section__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contacts-section__item {
+    font-size: 20px;
+    list-style: none;
+}
+.contacts-section__link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer__section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+
+.footer__section-link {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+.footer__section__years {
+    font-size: 20px;
+}
+
+.footer__github-img {
+    width: 50px;
+    height: 50px;
+}
+.footer__rss-icon {
+    width: 50px;
+    height: 50px;
+}

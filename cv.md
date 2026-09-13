@@ -63,3 +63,10 @@ input.addEventListener("keyword",(e) => {
   }
 })
 ```
+
+### My experience
+
+I don't have any professional experience in software development yet.
+
+### My projects:
+This is my first project related to this course.
